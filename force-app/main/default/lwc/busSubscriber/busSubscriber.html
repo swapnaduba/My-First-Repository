@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Bus Details">
+        <p>
+            <lightning-record-form  record-id={busId}
+                                    object-api-name={objectApiName}
+                                    fields={fields}
+                                    columns="1"
+                                    mode="view"
+                                     >
+            </lightning-record-form>
+        </p>
+    </lightning-card>
+    <lightning-card title="Bus Resale">
+        <p>
+            <lightning-record-view-form
+            object-api-name={objectApiName}
+            record-id={busId}
+        >
+            <lightning-output-field field-name={fieldName}> </lightning-output-field>
+        </lightning-record-view-form>
+        </p>
+    </lightning-card>
+</template>

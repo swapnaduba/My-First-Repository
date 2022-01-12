@@ -1,0 +1,12 @@
+<template>
+    <label>Available Fields</label>
+    <lightning-button variant="base" label="Add" title="Base action" onclick={sendSelectedItems}></lightning-button>
+
+    <select multiple class="slds-select" name="optionSelect" size="10" >
+        <template for:each={Fields} for:item="field">
+            <option key={field} value={field} onselect={addSelect}>{field}</option>
+        </template>
+    </select >
+    <c-select-fields retrieved-fields = {sendingFields} ></c-select-fields>
+   
+</template>

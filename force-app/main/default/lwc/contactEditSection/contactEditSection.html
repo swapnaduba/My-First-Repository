@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Edit Section">
+        <lightning-record-form object-api-name={objectName}
+                                fields={fields}
+                                record-id={recordId}
+                                onsuccess={handleContactEditSuccess}>
+            <lightning-messages></lightning-messages>
+            
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Requirements !">
+        <p class="slds-p-around_small">
+            The record form component should display the Contact's Name and Lead Source fields.
+        </p>
+        <p class="slds-p-around_small">
+            Upon successful Save, the Contact List component should be updated so that it shows the 
+            updates made to the Contact.
+        </p>
+    </lightning-card>
+</template>

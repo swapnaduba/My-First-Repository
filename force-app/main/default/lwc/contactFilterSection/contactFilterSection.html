@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Filter Section">
+        <div class="slds-p-around_medium">
+            <lightning-input label="First Name" onchange={handleNameInputChange}></lightning-input>
+
+            <lightning-combobox label="Lead Source" 
+                        options={leadSourceOptions} 
+                        onchange={handleLeadSourceChange}></lightning-combobox>
+        </div>
+    </lightning-card>
+    <lightning-card title="Requirements!">
+        <p class="slds-p-around_small">After typing two letters, the Contact List component should 
+            filter on the First Name field.
+        </p>
+        <p class="slds-p-around_small">The Lead Source picklist should have its options populated 
+            from the Lead Source's schema.
+        </p>
+        <p class="slds-p-around_small">The Lead Source picklist should include an "All" option that should 
+            update the filter of the Contact List component, to show all Lead Source types.
+        </p>
+        <p class="slds-p-around_small">After selecting a Lead Source, the Contact List component should filter 
+            on the Lead Source field.
+        </p>
+
+    </lightning-card>
+</template>

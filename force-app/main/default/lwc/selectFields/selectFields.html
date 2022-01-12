@@ -1,0 +1,10 @@
+<template>
+    <label>Selected Fields</label>
+    
+    <select multiple class="slds-select" name="optionSelect" size="10" >
+        <template for:each={retrievedFields} for:item="field">
+            <option key={field} value={field} onselect={addSelect}>{field}</option>
+        </template>
+    </select >
+    
+</template>

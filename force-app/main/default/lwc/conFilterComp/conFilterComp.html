@@ -1,0 +1,30 @@
+<template>
+
+        <lightning-card title="Filter Section">   
+            <div class="slds-p-around_medium">   
+                <lightning-input type="search" label="First Name" onchange={handleNameInputChange} value={InputName}></lightning-input>
+                <lightning-combobox label="Lead Source"
+                                    options={leadSourceOptions}
+                                    onchange={handleLeadSourceChange}
+                                    value={LeadSource}>
+
+                </lightning-combobox>
+            </div>
+        </lightning-card>   
+    <!-- <lightning-card>   
+        <template for:each={contactList} for:item="conObj" for:index="index">                
+                        <tr class="slds-hint-parent" key={conObj.Id}>
+                           <td>{conObj.FirstName}</td>
+                           <td>{conObj.Name}</td>
+                        </tr>            
+         </template>          
+     </lightning-card> --> 
+     <lightning-card>
+        
+            <lightning-datatable key-field="id"
+                                data={data}
+                                columns={columns} >     
+            </lightning-datatable>
+     
+     </lightning-card>
+</template>
