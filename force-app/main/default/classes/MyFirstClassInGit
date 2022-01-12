@@ -1,0 +1,5 @@
+Public Class MyFirstClassInGit {
+  public static void firstMethodInGit(){
+     System.debug('This is my First Program in Github and pulling it back to orh through VS Code');
+  }
+]
